@@ -1,4 +1,4 @@
-require_relative '../../lib/helper_methods.rb'
+# require_relative '../../lib/helper_methods.rb'
 
 class Genre < ActiveRecord::Base
   has_many :song_genres

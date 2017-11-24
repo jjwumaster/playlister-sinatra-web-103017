@@ -1,0 +1,11 @@
+<p>genre name: <%= @genre.name %></p>
+
+<p>artists:<p>
+<% @genre.artists.each_with_index do |artist, index| %>
+<p><%=index + 1%>. <a href="/artists/<%= artist.slug %>"><%= artist.name %></a></p>
+<% end %>
+
+<p>songs:<p>
+<% @genre.songs.each_with_index do |song, index| %>
+<p><%=index + 1%>. <a href="/songs/<%= song.slug %>"><%= song.name %></a></p>
+<% end %>

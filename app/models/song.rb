@@ -1,4 +1,4 @@
-require_relative '../../lib/helper_methods.rb'
+# require_relative '../../lib/helper_methods.rb'
 
 class Song < ActiveRecord::Base
   belongs_to :artist
