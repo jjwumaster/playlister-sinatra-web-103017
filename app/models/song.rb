@@ -12,7 +12,7 @@ class Song < ActiveRecord::Base
   end
 
   def slug
-    self.name.downcase.gsub!(/[\s\!\@\#\$\%\^\&\*\(\)\.]/,"-")
+    self.name.downcase.gsub(/[\s\!\@\#\$\%\^\&\*\(\)\.]/,"-")
   end
 
 end

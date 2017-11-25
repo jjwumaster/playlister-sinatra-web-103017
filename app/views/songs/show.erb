@@ -1,5 +1,6 @@
 <p>song name: <%= @song.name %></p>
 <p>artist: <a href="/artists/<%= @song.artist.slug %>"><%= @song.artist.name %></a></p>
+
 <p>genres:<p>
 <% @song.genres.each_with_index do |genre, index| %>
 <p><%=index + 1%>. <a href="/genres/<%= genre.slug %>"><%= genre.name %></a></p>

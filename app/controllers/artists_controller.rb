@@ -10,4 +10,5 @@ class ArtistsController < ApplicationController
     erb :'/artists/show'
   end
 
+
 end
