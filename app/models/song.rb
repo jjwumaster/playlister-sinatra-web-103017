@@ -1,5 +1,8 @@
 # require_relative '../../lib/helper_methods.rb'
 
+require 'rack-flash'
+require "rack/flash/test"
+
 class Song < ActiveRecord::Base
   belongs_to :artist
   has_many :song_genres
